@@ -16,6 +16,7 @@ def directors_totals(nds)
     director_i=0
     while director_i < nds.length do
       direct_name=nds[director_i][:name]   #Stephen Spielberg
+      binding.pry
       result[direct_name]=0  #result[nds[director_i][:name]]=0
       movie_i=0
       while movie_i < nds[director_i][:movies].length do
