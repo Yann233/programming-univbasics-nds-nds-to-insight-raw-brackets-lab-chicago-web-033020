@@ -14,16 +14,12 @@ def directors_totals(nds)
   result = {}
     director_i=0
     while director_i < nds.length do
-      direct_name=nds[director_i][:name]
-<<<<<<< HEAD
-      result[direct_name]=0
-=======
-      result[direct_name]=0   ????#result["Stephen Spielberg"]=0
->>>>>>> fc058bfb5b895e437da77c3a945f9c48c82e81b5
+      direct_name=nds[director_i][:name]   #Stephen Spielberg
+      result[direct_name]=0  #result[nds[director_i][:name]]=0
       movie_i=0
       while movie_i < nds[director_i][:movies].length do
       #  binding.pry
-        result[direct_name] += nds[director_i][:movies][movie_i][:worldwide_gross] ????#earing by director at i position, a+=b=>a=a+b
+        result[direct_name] += nds[director_i][:movies][movie_i][:worldwide_gross]
         movie_i += 1
       end
         director_i += 1
